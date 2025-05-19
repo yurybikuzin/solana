@@ -1,0 +1,10 @@
+
+senders:
+  - keypair_path: "./wallets/sender1.json"
+  - keypair_path: "./wallets/sender2.json"
+
+recipients:
+  - address: "recipient1_pubkey"
+  - address: "recipient2_pubkey"
+
+amount_sol: 0.01
