@@ -1,7 +1,9 @@
 [package]
+edition = "2024"
 name = "geyser_subscriber"
-version = "0.1.0"
-edition = "2021"
+version = "0.1.1"
+# 0.1.1 - cleaned code
+# 0.1.0 - initial
 
 [dependencies]
 tokio = { workspace = true }

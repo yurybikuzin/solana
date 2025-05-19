@@ -37,19 +37,6 @@ struct Config {
     x_token: Option<String>,
 }
 
-// Заглушка Geyser-клиента (реализуется отдельно по протоколу GRPC)
-// async fn subscribe_to_blocks<F>(mut on_block: F)
-// where
-//     F: FnMut() + Send + 'static,
-// {
-//     // Здесь будет GRPC соединение и подписка на новые блоки
-//     // Например, используя tonic::transport::Channel и сгенерированные protobuf-клиенты
-//     loop {
-//         tokio::time::sleep(std::time::Duration::from_secs(15)).await;
-//         on_block(); // вызывается при получении нового блока
-//     }
-// }
-
 fn send_transaction(
     client: &RpcClient,
     payer: &Keypair,
@@ -157,22 +144,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             Ok::<(), anyhow::Error>(())
         }
     )?;
-
-    // subscribe_to_blocks(move || {
-    //     let client = rpc_clone.clone();
-    //     let payer = payer_clone.clone();
-    //     let recipient = recipient_clone.clone();
-    //
-    //     tokio::spawn(async move {
-    //         println!("Новый блок обнаружен. Отправка SOL...");
-    //
-    //         match send_transaction(&client, &payer, &recipient, lamports_to_send) {
-    //             Ok(sig) => println!("Транзакция отправлена: {}", sig),
-    //             Err(e) => eprintln!("Ошибка отправки: {}", e),
-    //         }
-    //     });
-    // })
-    // .await;
 
     Ok(())
 }
