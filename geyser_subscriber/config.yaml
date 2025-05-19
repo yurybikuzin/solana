@@ -1,0 +1,4 @@
+private_key_path: "./id.json"
+recipient_address: "RecipientPublicKeyHere"
+rpc_url: "https://api.mainnet-beta.solana.com"
+grpc_url: "http://localhost:10000"  # Geyser GRPC сервер

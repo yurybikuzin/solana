@@ -1,4 +1,5 @@
 wallets:
   - 9wFFW9rVbAGwYF7SWsDpUeD7GM5uKY5ZzNT9PBkoXz4r
   - 7GgdxwQ6TX4RuVQShfFXS5M8VKmwMGsULWkb1zRgLRaZ
+
 rpc_url: "https://api.mainnet-beta.solana.com"
