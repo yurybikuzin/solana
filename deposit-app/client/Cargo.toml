@@ -1,0 +1,12 @@
+[package]
+name = "deposit_app_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anchor-client = { workspace = true }
+anchor-lang = { workspace = true }
+solana-sdk = { workspace = true }
+anyhow = { workspace = true }
+borsh = { workspace = true }
+deposit_program = { workspace = true }
