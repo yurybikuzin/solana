@@ -1,0 +1,13 @@
+[package]
+name = "balances"
+version = "0.1.0"
+authors = ["Yury Bikuzin <yury.bikuzin@gmail.com>"]
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+futures = "0.3"
